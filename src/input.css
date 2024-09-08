@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .linear-wipe {
+    @apply text-center bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      to right,
+      #21ac50,
+      #00bdab,
+      #53c6df,
+      #b1cce7,
+      #dadada,
+      #21ac50
+    );
+    background-size: 200% auto;
+    animation: shine 3s linear infinite;
+  }
+
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
+
+@layer utilities {
+  .gradient-bg {
+    @apply h-full;
+    background-image: linear-gradient(
+      to right,
+      #1f2c48,
+      #0f283a,
+      #0c222b,
+      #0f1a1d,
+      #101212,
+      #1f2c48
+    );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    /* 100% {
+      background-position: 0% 50%;
+    } */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-container {
+    flex-wrap: wrap;
+  }
+  .toggle {
+    color: rgb(209, 209, 209);
+    display: inherit;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .toggle:hover {
+    color: white;
+  }
+  .nav-lists {
+    height: 0;
+    margin-left: 1rem;
+    overflow: hidden;
+    width: 100%;
+    opacity: 0;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-lists.active {
+    margin-top: 1rem;
+    opacity: 1;
+    height: 350px;
+  }
+
+  .nav-items {
+    border-bottom: 1px solid rgb(66, 66, 66);
+  }
+  .nav-items > a {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .form {
+    display: none;
+    transform: translate();
+  }
+  /* .logo{
+    padding: 12.5px 0;
+  } */
+}

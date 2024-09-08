@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/main.css" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Hearder -->
+    <header>
+      <nav class="bg-secondary_color navigation">
+        <div
+          class="nav-container flex justify-between m-auto items-center px-4 py-4"
+        >
+          <div class="logo">
+            <img
+              src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/5/logo.svg"
+              alt=""
+              class="w-[150px]"
+            />
+          </div>
+
+          <form class="form max-w-md mx-auto">
+            <label
+              for="default-search"
+              class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+              >Search</label
+            >
+            <div class="relative">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              ></div>
+              <input
+                type="search"
+                id="default-search"
+                class="max-sm:w-[300px] block w-[400px] h-9 p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Find your course..."
+                required
+              />
+              <button
+                type="submit"
+                class="text-white absolute flex items-center end-1 bottom-1 top-1 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+          <span class="hidden toggle">
+            <i class="fa-sharp fa-solid fa-bars text-2xl"></i>
+          </span>
+          <ul class="flex gap-[1rem] text-[1rem] nav-lists text-white">
+            <li class="nav-items"><a href="#introduction">Home</a></li>
+            <li class="nav-items"><a href="#detail-course">Dashboard</a></li>
+            <li class="nav-items"><a href="">My courses</a></li>
+            <li class="nav-items"><a href="">Inbox</a></li>
+            <li class="nav-items"><a href="">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Introduction -->
+      <section id="introduction">
+        <div class="bg-gradient-to-t from-secondary_color to-primary_color">
+          <section
+            class="relative lg:min-h-[1000px] pt-24 pb-10 sm:pt-32 sm:pb-16 lg:pb-24"
+          >
+            <div class="absolute inset-x-0 bottom-0 z-10 hidden lg:flex">
+              <img
+                class="hidden w-full lg:block"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/5/credit-cards.png"
+                alt=""
+              />
+              <img
+                class="block w-full lg:hidden"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/5/credit-cards-mobile.png"
+                alt=""
+              />
+            </div>
+
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-20">
+              <div class="max-w-xl mx-auto text-center">
+                <h1 class="text-4xl font-bold sm:text-6xl">
+                  <span class="text-transparent bg-clip-text linear-wipe">
+                    Welcome to our courses
+                  </span>
+                </h1>
+                <p class="mt-5 text-base text-white sm:text-xl">
+                  This website can help you to learn programming
+                </p>
+
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex items-center px-6 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-lg sm:mt-16 hover:bg-blue-700 focus:bg-blue-700"
+                  role="button"
+                >
+                  Start for free
+                  <svg
+                    class="w-6 h-6 ml-8 -mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </a>
+
+                <div
+                  class="grid grid-cols-1 px-20 mt-12 text-left gap-x-12 gap-y-8 sm:grid-cols-3 sm:px-0"
+                >
+                  <div class="flex items-center">
+                    <svg
+                      class="flex-shrink-0"
+                      width="31"
+                      height="25"
+                      viewBox="0 0 31 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M25.1667 14.187H20.3333C17.6637 14.187 15.5 16.3507 15.5 19.0203V19.8258C15.5 19.8258 18.0174 20.6314 22.75 20.6314C27.4826 20.6314 30 19.8258 30 19.8258V19.0203C30 16.3507 27.8363 14.187 25.1667 14.187Z"
+                        stroke="#28CC9D"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.7227 6.9369C18.7227 4.71276 20.5263 2.90912 22.7504 2.90912C24.9746 2.90912 26.7782 4.71276 26.7782 6.9369C26.7782 9.16104 24.9746 11.7702 22.7504 11.7702C20.5263 11.7702 18.7227 9.16104 18.7227 6.9369Z"
+                        stroke="#28CC9D"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13.2231 15.8512H7.11157C3.73595 15.8512 1 18.5871 1 21.9628V22.9814C1 22.9814 4.18311 24 10.1674 24C16.1516 24 19.3347 22.9814 19.3347 22.9814V21.9628C19.3347 18.5871 16.5988 15.8512 13.2231 15.8512Z"
+                        fill="#0B1715"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.07422 6.68386C5.07422 3.87152 7.35485 1.59088 10.1672 1.59088C12.9795 1.59088 15.2602 3.87152 15.2602 6.68386C15.2602 9.4962 12.9795 12.7954 10.1672 12.7954C7.35485 12.7954 5.07422 9.4962 5.07422 6.68386Z"
+                        fill="#0B1715"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="ml-3 text-sm text-white">
+                      Over 12,000 students joined
+                    </p>
+                  </div>
+
+                  <div class="flex items-center">
+                    <svg
+                      class="flex-shrink-0"
+                      width="23"
+                      height="23"
+                      viewBox="0 0 23 23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.8335 21.9166H3.16683C2.6143 21.9166 2.08439 21.6972 1.69369 21.3065C1.30299 20.9158 1.0835 20.3858 1.0835 19.8333V3.16665C1.0835 2.61411 1.30299 2.08421 1.69369 1.69351C2.08439 1.30281 2.6143 1.08331 3.16683 1.08331H19.8335C20.386 1.08331 20.9159 1.30281 21.3066 1.69351C21.6973 2.08421 21.9168 2.61411 21.9168 3.16665V19.8333C21.9168 20.3858 21.6973 20.9158 21.3066 21.3065C20.9159 21.6972 20.386 21.9166 19.8335 21.9166Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7 12.6667L9.25 15L16 8"
+                        stroke="#28CC9D"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="ml-3 text-sm text-white">
+                      No yearly charges, maximum limits
+                    </p>
+                  </div>
+
+                  <div class="flex items-center">
+                    <svg
+                      class="flex-shrink-0"
+                      width="20"
+                      height="24"
+                      viewBox="0 0 20 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17 11H3C1.89543 11 1 11.8954 1 13V21C1 22.1046 1.89543 23 3 23H17C18.1046 23 19 22.1046 19 21V13C19 11.8954 18.1046 11 17 11Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10 19C11.1046 19 12 18.1046 12 17C12 15.8954 11.1046 15 10 15C8.89543 15 8 15.8954 8 17C8 18.1046 8.89543 19 10 19Z"
+                        stroke="#28CC9D"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15 7V6C15.0131 4.68724 14.5042 3.42303 13.5853 2.48539C12.6664 1.54776 11.4128 1.01346 10.1 1H10C8.68724 0.986939 7.42303 1.4958 6.48539 2.41469C5.54776 3.33357 5.01346 4.58724 5 5.9V7"
+                        stroke="#28CC9D"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="ml-3 text-sm text-white">
+                      Secured & safe online payment
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- Get start -->
+      <section class="bg-primary_color dark:bg-secondary_color">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+          <h1
+            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+          >
+            We invest in the world’s potential
+          </h1>
+          <p
+            class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400"
+          >
+            Here at Flowbite we focus on markets where technology, innovation,
+            and capital can unlock long-term value and drive economic growth.
+          </p>
+          <div
+            class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
+          >
+            <a
+              href="#"
+              class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+            >
+              Get started
+              <svg
+                class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-primary_color hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-70"
+            >
+              Learn more
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Detail Course -->
+      <section
+        id="detail-course"
+        class="transition duration-300 py-10 bg-primary_color sm:py-16 lg:py-24"
+      >
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div class="max-w-2xl mx-auto text-center">
+            <h2
+              class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
+            >
+              What course do you want to learn
+            </h2>
+            <p
+              class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600"
+            >
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis.
+            </p>
+          </div>
+          <!-- Course -->
+          <div
+            class="grid grid-cols-1 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-4 sm:grid-cols-2"
+          >
+            <div class="overflow-hidden bg-white rounded-md">
+              <div class="px-5 py-6">
+                <div class="flex items-center justify-between">
+                  <img
+                    class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                    src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-1.jpg"
+                    alt=""
+                  />
+                  <div class="min-w-0 ml-3 mr-auto">
+                    <p class="text-base font-semibold text-black truncate">
+                      Darrell Steward
+                    </p>
+                    <p class="text-sm text-gray-600 truncate">@darrels</p>
+                  </div>
+                  <a href="#" title="" class="inline-block text-red-500">
+                    <i class="fa-brands fa-html5 text-2xl"></i>
+                  </a>
+                </div>
+                <blockquote class="mt-5">
+                  <p class="text-base text-gray-800">
+                    You made it so simple. My new site is so much faster and
+                    easier to work with than my old site. I just choose the
+                    page, make the change and click save.
+                    <span class="block text-sky-500">#another</span>
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="overflow-hidden bg-white rounded-md">
+              <div class="px-5 py-6">
+                <div class="flex items-center justify-between">
+                  <img
+                    class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                    src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-2.jpg"
+                    alt=""
+                  />
+                  <div class="min-w-0 ml-3 mr-auto">
+                    <p class="text-base font-semibold text-black truncate">
+                      Leslie Alexander
+                    </p>
+                    <p class="text-sm text-gray-600 truncate">@lesslie</p>
+                  </div>
+                  <a href="#" title="" class="inline-block text-blue-500">
+                    <i class="fa-brands fa-css3-alt text-2xl"></i>
+                  </a>
+                </div>
+                <blockquote class="mt-5">
+                  <p class="text-base text-gray-800">
+                    Simply the best. Better than all the rest. I’d recommend
+                    this product to beginners and advanced users.
+                    <span class="block text-sky-500">#Celebration</span>
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="overflow-hidden bg-white rounded-md">
+              <div class="px-5 py-6">
+                <div class="flex items-center justify-between">
+                  <img
+                    class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                    src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-3.jpg"
+                    alt=""
+                  />
+                  <div class="min-w-0 ml-3 mr-auto">
+                    <p class="text-base font-semibold text-black truncate">
+                      Jenny Wilson
+                    </p>
+                    <p class="text-sm text-gray-600 truncate">@jennywilson</p>
+                  </div>
+                  <a href="#" title="" class="inline-block text-yellow-500">
+                    <i class="fa-brands fa-js text-2xl"></i>
+                  </a>
+                </div>
+                <blockquote class="mt-5">
+                  <p class="text-base text-gray-800">
+                    This is a top quality product. No need to think twice before
+                    making it live on web.
+                    <span class="block text-sky-500">#make_it_fast</span>
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="overflow-hidden bg-white rounded-md">
+              <div class="px-5 py-6">
+                <div class="flex items-center justify-between">
+                  <img
+                    class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                    src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-4.jpg"
+                    alt=""
+                  />
+                  <div class="min-w-0 ml-3 mr-auto">
+                    <p class="text-base font-semibold text-black truncate">
+                      Kristin Watson
+                    </p>
+                    <p class="text-sm text-gray-600 truncate">
+                      @kristinwatson2
+                    </p>
+                  </div>
+                  <a href="#" title="" class="inline-block">
+                    <img src="./img/python-logo.webp" class="w-[24px]" alt="" />
+                  </a>
+                </div>
+                <blockquote class="mt-5">
+                  <p class="text-base text-gray-800">
+                    YFinally, I’ve found a template that covers all bases for a
+                    bootstrapped startup. We were able to launch in days, not
+                    months.
+                    <span class="block text-sky-500">#Celebration</span>
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="overflow-hidden bg-white rounded-md">
+              <div class="px-5 py-6">
+                <div class="flex items-center justify-between">
+                  <img
+                    class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                    src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-5.jpg"
+                    alt=""
+                  />
+                  <div class="min-w-0 ml-3 mr-auto">
+                    <p class="text-base font-semibold text-black truncate">
+                      Guy Hawkins
+                    </p>
+                    <p class="text-sm text-gray-600 truncate">@jennywilson</p>
+                  </div>
+                  <a href="#" title="" class="inline-block w-[37px]">
+                    <img src="./img/java.webp" alt="" />
+                  </a>
+                </div>
+                <blockquote class="mt-5">
+                  <p class="text-base text-gray-800">
+                    This is a top quality product. No need to think twice before
+                    making it live on web.
+                    <span class="block text-sky-500">#make_it_fast</span>
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="overflow-hidden bg-white rounded-md">
+              <div class="px-5 py-6">
+                <div class="flex items-center justify-between">
+                  <img
+                    class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                    src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-6.jpg"
+                    alt=""
+                  />
+                  <div class="min-w-0 ml-3 mr-auto">
+                    <p class="text-base font-semibold text-black truncate">
+                      Marvin McKinney
+                    </p>
+                    <p class="text-sm text-gray-600 truncate">@darrels</p>
+                  </div>
+                  <a href="#" title="" class="inline-block w-[25px]">
+                    <img src="./img/C shap.webp" alt="" />
+                  </a>
+                </div>
+                <blockquote class="mt-5">
+                  <p class="text-base text-gray-800">
+                    With Celebration, it’s quicker with the customer, the
+                    customer is more ensured of getting exactly what they
+                    ordered, and I’m all for the efficiency.
+                    <span class="block text-sky-500">#dev #tools</span>
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="overflow-hidden bg-white rounded-md">
+              <div class="px-5 py-6">
+                <div class="flex items-center justify-between">
+                  <img
+                    class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                    src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-7.jpg"
+                    alt=""
+                  />
+                  <div class="min-w-0 ml-3 mr-auto">
+                    <p class="text-base font-semibold text-black truncate">
+                      Annette Black
+                    </p>
+                    <p class="text-sm text-gray-600 truncate">@darrels</p>
+                  </div>
+                  <a href="#" title="" class="inline-block w-[25px]">
+                    <img src="./img/Cpp.webp" alt="" />
+                  </a>
+                </div>
+                <blockquote class="mt-5">
+                  <p class="text-base text-gray-800">
+                    You made it so simple. My new site is so much faster and
+                    easier to work with than my old site. I just choose the
+                    page, make the change and click save.
+                    <span class="block text-sky-500">#another</span>
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="overflow-hidden bg-white rounded-md">
+              <div class="px-5 py-6">
+                <div class="flex items-center justify-between">
+                  <img
+                    class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                    src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-8.jpg"
+                    alt=""
+                  />
+                  <div class="min-w-0 ml-3 mr-auto">
+                    <p class="text-base font-semibold text-black truncate">
+                      Floyd Miles
+                    </p>
+                    <p class="text-sm text-gray-600 truncate">@darrels</p>
+                  </div>
+                  <a href="#" title="" class="inline-block w-[30px]">
+                    <img src="./img/docker.webp" alt="" />
+                  </a>
+                </div>
+                <blockquote class="mt-5">
+                  <p class="text-base text-gray-800">
+                    My new site is so much faster and easier to work with than
+                    my old site. I just choose the page, make the change and
+                    click save.
+                    <span class="block text-sky-500">#Celebration</span>
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Planning -->
+      <section>
+        <section class="py-10 bg-white sm:py-16 lg:py-24">
+          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="max-w-2xl mx-auto text-center">
+              <h2
+                class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
+              >
+                Simple Pricing
+              </h2>
+              <p
+                class="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600"
+              >
+                Try free for 30 Days
+              </p>
+            </div>
+
+            <div
+              class="grid grid-cols-1 gap-6 mx-auto mt-8 text-center md:max-w-5xl sm:grid-cols-3 md:gap-8 sm:mt-16"
+            >
+              <div
+                class="relative overflow-hidden bg-transparent border-2 border-gray-100 rounded-md"
+              >
+                <div class="absolute hidden top-3 right-3">
+                  <svg
+                    class="w-6 h-6 text-orange-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+
+                <div class="px-4 py-5 lg:p-8">
+                  <p class="text-lg font-medium text-gray-500">1 Week</p>
+                  <p class="mt-4 text-6xl font-bold text-black">$4</p>
+                  <ul class="flex flex-col mt-8 space-y-1">
+                    <li class="text-base font-medium text-gray-900 lg:text-xl">
+                      Less than $1 a day
+                    </li>
+                    <li class="text-base font-medium text-gray-600 lg:text-xl">
+                      Billed every week
+                    </li>
+                    <li class="text-base font-medium text-gray-600 lg:text-xl">
+                      Cancel anytime
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div
+                class="relative overflow-hidden bg-transparent border-2 border-gray-100 rounded-md"
+              >
+                <div class="absolute hidden top-3 right-3">
+                  <svg
+                    class="w-6 h-6 text-orange-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+
+                <div class="px-4 py-5 lg:p-8">
+                  <p class="text-lg font-medium text-gray-500">1 Month</p>
+                  <p class="mt-4 text-6xl font-bold text-black">$19</p>
+                  <ul class="flex flex-col mt-8 space-y-1">
+                    <li class="text-base font-medium text-gray-900 lg:text-xl">
+                      Less than $5 a week
+                    </li>
+                    <li class="text-base font-medium text-gray-600 lg:text-xl">
+                      Billed every month
+                    </li>
+                    <li class="text-base font-medium text-gray-600 lg:text-xl">
+                      Cancel anytime
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div
+                class="relative overflow-hidden bg-white border-2 border-gray-900 rounded-md shadow"
+              >
+                <div class="absolute top-3 right-3">
+                  <svg
+                    class="w-6 h-6 text-orange-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+
+                <div class="px-4 py-5 lg:p-8">
+                  <p class="text-lg font-medium text-gray-500">1 Year</p>
+                  <p class="mt-4 text-6xl font-bold text-black">$99</p>
+                  <ul class="flex flex-col mt-8 space-y-1">
+                    <li class="text-base font-medium text-gray-900 lg:text-xl">
+                      Less than $2 a week
+                    </li>
+                    <li class="text-base font-medium text-gray-600 lg:text-xl">
+                      Billed every year
+                    </li>
+                    <li class="text-base font-medium text-gray-600 lg:text-xl">
+                      Cancel anytime
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 text-center md:mt-16">
+              <a
+                href="#"
+                title=""
+                class="inline-flex items-center justify-center px-10 py-4 font-semibold text-white transition-all duration-200 rounded-md bg-gradient-to-r from-fuchsia-600 to-blue-600 focus:opacity-80 hover:opacity-80"
+                role="button"
+              >
+                Create your account
+              </a>
+              <p class="mt-4 text-sm text-gray-700">No Credit Card Required</p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Singin -->
+      <section>
+        <section class="bg-white">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div
+              class="flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24"
+            >
+              <div class="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
+                <h2
+                  class="text-3xl font-bold leading-tight text-black sm:text-4xl"
+                >
+                  Sign in to Celebration
+                </h2>
+                <p class="mt-2 text-base text-gray-600">
+                  Don’t have an account?
+                  <a
+                    href="#"
+                    title=""
+                    class="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 hover:underline focus:text-blue-700"
+                    >Create a free account</a
+                  >
+                </p>
+
+                <form action="#" method="POST" class="mt-8">
+                  <div class="space-y-5">
+                    <div>
+                      <label for="" class="text-base font-medium text-gray-900">
+                        Email address
+                      </label>
+                      <div class="mt-2.5">
+                        <input
+                          type="email"
+                          name=""
+                          id=""
+                          placeholder="Enter email to get started"
+                          class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="flex items-center justify-between">
+                        <label
+                          for=""
+                          class="text-base font-medium text-gray-900"
+                        >
+                          Password
+                        </label>
+
+                        <a
+                          href="#"
+                          title=""
+                          class="text-sm font-medium text-blue-600 hover:underline hover:text-blue-700 focus:text-blue-700"
+                        >
+                          Forgot password?
+                        </a>
+                      </div>
+                      <div class="mt-2.5">
+                        <input
+                          type="password"
+                          name=""
+                          id=""
+                          placeholder="Enter your password"
+                          class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <button
+                        type="submit"
+                        class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700"
+                      >
+                        Log in
+                      </button>
+                    </div>
+                  </div>
+                </form>
+
+                <div class="mt-3 space-y-3">
+                  <button
+                    type="button"
+                    class="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-gray-700 transition-all duration-200 bg-white border-2 border-gray-200 rounded-md hover:bg-gray-100 focus:bg-gray-100 hover:text-black focus:text-black focus:outline-none"
+                  >
+                    <div class="absolute inset-y-0 left-0 p-4">
+                      <svg
+                        class="w-6 h-6 text-rose-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Sign in with Google
+                  </button>
+
+                  <button
+                    type="button"
+                    class="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-gray-700 transition-all duration-200 bg-white border-2 border-gray-200 rounded-md hover:bg-gray-100 focus:bg-gray-100 hover:text-black focus:text-black focus:outline-none"
+                  >
+                    <div class="absolute inset-y-0 left-0 p-4">
+                      <svg
+                        class="w-6 h-6 text-[#2563EB]"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Sign in with Facebook
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center justify-center px-4 py-10 sm:py-16 lg:py-24 bg-gray-50 sm:px-6 lg:px-8"
+            >
+              <div>
+                <img
+                  class="w-full mx-auto"
+                  src="https://cdn.rareblocks.xyz/collection/celebration/images/signup/1/cards.png"
+                  alt=""
+                />
+
+                <div class="w-full max-w-md mx-auto xl:max-w-xl">
+                  <h3 class="text-2xl font-bold text-center text-black">
+                    Design your own card
+                  </h3>
+                  <p class="leading-relaxed text-center text-gray-500 mt-2.5">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis.
+                  </p>
+
+                  <div class="flex items-center justify-center mt-10 space-x-3">
+                    <div class="bg-orange-500 rounded-full w-20 h-1.5"></div>
+
+                    <div class="bg-gray-200 rounded-full w-12 h-1.5"></div>
+
+                    <div class="bg-gray-200 rounded-full w-12 h-1.5"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <section class="py-10 bg-gray-900 sm:pt-16 lg:pt-24">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+          <div
+            class="grid grid-cols-2 gap-x-5 gap-y-12 md:grid-cols-4 md:gap-x-12"
+          >
+            <div>
+              <p class="text-base text-gray-500">Company</p>
+
+              <ul class="mt-8 space-y-4">
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    Features
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    Works
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    Career
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="text-base text-gray-500">Help</p>
+
+              <ul class="mt-8 space-y-4">
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    Customer Support
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    Delivery Details
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="text-base text-gray-500">Resources</p>
+
+              <ul class="mt-8 space-y-4">
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    Free eBooks
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    Development Tutorial
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    How to - Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    YouTube Playlist
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="text-base text-gray-500">Extra Links</p>
+
+              <ul class="mt-8 space-y-4">
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    Customer Support
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    Delivery Details
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="mt-16 mb-10 border-gray-800" />
+
+          <div class="flex flex-wrap items-center justify-between">
+            <img
+              class="h-8 auto md:order-1"
+              src="https://cdn.rareblocks.xyz/collection/celebration/images/logo-alt.svg"
+              alt=""
+            />
+
+            <ul class="flex items-center space-x-3 md:order-3">
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+            </ul>
+
+            <p
+              class="w-full mt-8 text-sm text-center text-gray-100 md:mt-0 md:w-auto md:order-2"
+            >
+              © Copyright 2021, All Rights Reserved by Postcraft
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="./public/script.js"></script>
+  </body>
+</html>
