@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 @layer utilities {
   .linear-wipe {
     @apply text-center bg-clip-text text-transparent;
